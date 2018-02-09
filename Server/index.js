@@ -20,7 +20,7 @@ let usercollection
 const start = async () => {
   // connect to database
   db = await datab.connect('mongodb://localhost:27017')
-  usercollection = db.collection('user')
+  usercollection = db.collection('eveuser')
   // check if table exists and create one if not
   app.listen(port, function () {
       console.log(`Example app listening on port ${port}!`)
